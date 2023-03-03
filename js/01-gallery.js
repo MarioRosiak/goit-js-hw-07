@@ -14,7 +14,7 @@ for (let i = 0; i < galleryItems.length; i++) {
   link.classList.add("gallery__link");
   img.classList.add("gallery__image");
   img.setAttribute("src", `${galleryItems[i].preview}`);
-  img.setAttribute("alt", `${galleryItems[i].description}`);
+  img.setAttribute("alt", `"${galleryItems[i].description}"`);
   img.dataset.source = `${galleryItems[i].original}`;
   link.setAttribute("href", `${galleryItems[i].original}`);
 }
